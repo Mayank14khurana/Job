@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 
 const corsOptions = {
-    origin: 'https://jobhunt-mu.vercel.app/',
+    origin: 'https://jobhunt-mu.vercel.app',
     credentials: true,
 };
 
