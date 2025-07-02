@@ -182,7 +182,9 @@ exports.login = async (req, res) => {
        
         const options = {
             maxAge: 2 * 60 * 60 * 1000,
-            httpOnly: true,           
+            httpOnly: true,    
+            secure: true,        
+            sameSite: 'None', 
         };
         console.log(token , "token is ")
         return res.status(200).cookie('login', token, options).json({
